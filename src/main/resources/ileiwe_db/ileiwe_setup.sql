@@ -1,5 +1,6 @@
-create database ileiwe_setup;
+create database if not exists ileiwe_setup;
 
-create user 'ileiwe_user'@'localhost' identified by 'ileiwe123';
+create user if not exists 'ileiwe_user'@'localhost' identified by 'ileiwe123';
 grant all privileges on ileiwe_setup.* to 'ileiwe_user'@'localhost';
 flush privileges;
+

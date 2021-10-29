@@ -18,7 +18,7 @@ public class Student {
     @Enumerated(EnumType.STRING)
     private Gender gender;
     @OneToOne
-    private learningParty learningParty;
+    private LearningParty learningParty;
     @ManyToMany
-    private List<Course> courses;
+    private List<Course> enrolledCourses;
 }
